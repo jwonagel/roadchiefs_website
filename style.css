@@ -29,7 +29,7 @@ body {
     }
 } 
 
-.x {
+.back {
     display:flex;
     position:fixed;
     left:0px;
@@ -38,7 +38,7 @@ body {
     height:100%;
     justify-content:center;
     align-items:center;
-
+    z-index: -1;
 
 }
 
@@ -46,6 +46,16 @@ body {
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .social {
+        grid-template-columns: auto;
+    }
+
+    .social div {
+        margin-left: 25px;
+    }
 }
 
 a, u {
